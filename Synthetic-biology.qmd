@@ -15,6 +15,13 @@ format:
     background-transition: fade
     logo: "Images/Brandeis-logo.jpeg"
     footer: "Synthetic Biology Principles | Applied Biotechnology & Enterprise"
+    width: 1050
+    height: 700
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.0
+    center: true
+    multiplex: true
 execute:
   echo: false
   warning: false
