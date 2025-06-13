@@ -1,0 +1,401 @@
+---
+title: "Basic Principles of Synthetic Biology"
+subtitle: "Engineering Biology for Innovation"
+author: "Magnus Stefansson, MBA, Ph.D."
+institute: "Applied Biotechnology and Enterprise Program"
+date: "`r Sys.Date()`"
+format:
+  revealjs:
+    theme: sky-most
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    code-fold: true
+    transition: slide
+    background-transition: fade
+    logo: "Images/Brandeis-logo.jpeg"
+    footer: "Synthetic Biology Principles | Applied Biotechnology & Enterprise"
+execute:
+  echo: false
+  warning: false
+  message: false
+bibliography: "C:/Users/mosti/OneDrive/Documents/ReferenceLibrary/Referernce_library_papers_ms-ed.bib"
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(knitr)
+library(DT)
+library(plotly)
+
+#Code storage     
+#theme: [default, custom.scss] 
+#'C:\Users\mosti\AppData\Local\Programs\Quarto\share\formats\revealjs\themes\custom.scss.scss'
+
+```
+
+## Course Overview
+
+::::: columns
+::: {.column style="width: 60%;"}
+**Today's Learning Objectives:**
+
+-   Define synthetic biology and its core principles\
+-   Understand key engineering approaches in biology\
+-   Explore standardization and modularity concepts\
+-   Examine commercial applications and market potential\
+-   Discuss ethical considerations and future directions
+:::
+
+::: {.column style="width: 40%;"}
+![](Images/Gemini_Generated_Image_mzd6rsmzd6rsmzd6.jpeg)
+:::
+:::::
+
+## What is Synthetic Biology?
+
+-   Definition: Engineering approach to biology that applies engineering
+    principles to biological systems
+
+-   Goal: Design and construct new biological parts, devices, and
+    systems
+
+-   Approach: Redesign existing natural biological systems for useful
+    purposes
+
+-   Interdisciplinary field: Combines biology, engineering, computer
+    science, and chemistry
+
+-   Bottom-up construction: Building biological systems from
+    well-characterized parts
+
+Source: Nature Reviews Molecular Cell Biology (2016)
+
+## Historical Context and Key Milestones
+
+**Key Milestones:**
+
+::::: columns
+::: {.column width="70%" style="text-align: center;"}
+-   1970s: Recombinant DNA technology foundations
+
+-   2000: First synthetic genome (φX174 bacteriophage)
+
+-   2003: BioBricks and standardized parts concept
+
+-   2010: First synthetic bacterial genome (*Mycoplasma mycoides*)
+
+-   2016: Synthetic yeast chromosome project
+
+-   2020s: CRISPR integration and advanced gene circuits
+:::
+
+::: {.column width="30%"}
+![](Images/Simple-DNA.png){fig-align="center" height="55px" style="margin: 0 0;"}
+
+![](Images/Phage.png){fig-align="center" height="55px" style="margin: 0 0;"}
+
+![](Images/Blocks.png){fig-align="center" height="55px" style="margin: 0 0;"}
+
+![](Images/Simple-Mycoplasma.png){fig-align="center" height="55px" style="margin: 0 0;"}
+
+![](Images/Simple-Chromosome.png){fig-align="center" height="55px" style="margin: 0 0;"}
+
+![](Images/Gene-circuits.png){fig-align="center" height="55px" style="margin: 0 0;"}
+:::
+:::::
+
+## Core Principle 1: Engineering Design Cycle
+
+::::: columns
+::: {.column width="50%"}
+**Traditional Engineering Approach:**
+
+-   Design: Specify system requirements
+-   Build: Construct the system
+-   Test: Measure performance
+-   Learn: Analyze results and iterate
+:::
+
+::: {.column width="50%"}
+**Applied to Biology:**
+
+-   Design: Define biological function
+-   Build: Assemble genetic circuits
+-   Test: Measure biological output
+-   Learn: Optimize and redesign
+:::
+:::::
+
+Source: Nature Biotechnology (2018)
+
+## Core Principle 2: Standardization
+
+-   BioBricks: Standardized biological parts with defined interfaces
+-   RFC Standards: Request for Comments defining part specifications
+-   Interchangeable components: Parts that work together predictably
+-   Characterization: Quantitative description of part behavior
+-   Registries: Databases of characterized biological parts
+
+Source: iGEM Foundation, Registry of Standard Biological Parts
+
+## Core Principle 3: Modularity
+
+::::: columns
+::: {.column width="60%"}
+**Hierarchical Organization:**
+
+-   Parts: Basic functional units (promoters, genes, terminators)
+-   Devices: Combinations of parts with specific functions
+-   Systems: Multiple devices working together
+-   Chassis: Host organisms containing the systems
+:::
+
+::: {.column width="40%"}
+AI-generated modular system diagram
+:::
+:::::
+
+## Core Principle 4: Abstraction
+
+::: incremental
+-   Physical Layer: DNA sequences, proteins, metabolites
+-   Device Layer: Functional units (sensors, actuators, logic gates)
+-   System Layer: Complete biological programs
+-   Application Layer: Real-world functions and purposes
+-   Benefit: Enables specialists to work at different levels without
+    understanding all details
+:::
+
+Source: Molecular Systems Biology (2017)
+
+## Genetic Circuits and Logic Gates
+
+::::: columns
+::: {.column width="50%"}
+**Boolean Logic in Biology:**
+
+-   AND gates: Multiple inputs required
+-   OR gates: Any input sufficient
+-   NOT gates: Inverter circuits
+-   Toggle switches: Bistable systems
+-   Oscillators: Periodic behavior
+:::
+
+::: {.column width="50%"}
+**Applications:**
+
+-   Biosensors for environmental monitoring
+-   Therapeutic circuits in medicine
+-   Metabolic pathway control
+-   Cell fate determination
+:::
+:::::
+
+Source: Science (2013) - Genetic logic circuits
+
+## Chassis Organisms
+
+::: incremental
+-   Escherichia coli: Most common, well-characterized, fast growth
+-   Saccharomyces cerevisiae: Eukaryotic system, post-translational
+    modifications
+-   Bacillus subtilis: Gram-positive, protein secretion capabilities
+-   Pichia pastoris: High protein expression levels
+-   Mammalian cells: Complex protein folding, human-compatible
+-   Minimal cells: Reduced genomes for predictable behavior
+:::
+
+AI-generated comparison of different chassis organisms
+
+## Synthetic Biology Toolbox
+
+::::: columns
+::: {.column width="50%"}
+**DNA Assembly Methods:**
+
+-   BioBrick assembly
+-   Gibson assembly
+-   Golden Gate assembly
+-   SLIC (Sequence and Ligation Independent Cloning)
+-   CPEC (Circular Polymerase Extension Cloning)
+:::
+
+::: {.column width="50%"}
+**Characterization Tools:**
+
+-   Flow cytometry
+-   Fluorescence microscopy
+-   RNA sequencing
+-   Proteomics
+-   Metabolomics
+:::
+:::::
+
+Source: Nature Methods (2019)
+
+## CRISPR Integration in Synthetic Biology
+
+::: incremental
+-   Programmable gene editing: Precise DNA modifications
+-   CRISPRa/CRISPRi: Activation and interference systems -Base editing:
+    Single nucleotide changes without double-strand breaks
+-   Prime editing: Precise insertions, deletions, and substitutions
+-   Multiplexed editing: Simultaneous modification of multiple targets
+:::
+
+Source: Nature Reviews Genetics (2020)
+
+## Metabolic Engineering Principles
+
+::::: columns
+::: {.column width="60%"}
+**Pathway Design Strategies:**
+
+-   Heterologous pathway expression: Introducing foreign pathways
+-   Pathway optimization: Balancing enzyme levels
+-   Cofactor engineering: Managing cellular resources
+-   Compartmentalization: Organizing reactions spatially
+-   Dynamic regulation: Responsive pathway control
+:::
+
+::: {.column width="40%"}
+AI-generated metabolic pathway diagram
+:::
+:::::
+
+## Protein Design and Engineering
+
+::: incremental
+-   Directed evolution: Laboratory-based protein evolution
+-   Rational design: Structure-based protein modification
+-   De novo design: Creating proteins from scratch
+-   Protein-protein interactions: Engineering binding specificity
+-   Allosteric regulation: Designing responsive proteins
+:::
+
+Source: Nature Chemical Biology (2018)
+
+## Biosafety and Containment
+
+::::: columns
+::: {.column width="50%"}
+**Physical Containment:**
+
+-   Laboratory biosafety levels
+
+-   Specialized equipment and facilities
+
+-   Training and protocols
+
+-   Waste management procedures
+:::
+
+::: {.column width="50%"}
+**Biological Containment:**
+
+-   Auxotrophic strains (nutrient dependencies)
+-   Kill switches and terminator genes
+-   Orthogonal biological systems
+-   Genetic firewalls
+:::
+:::::
+
+AI-generated biosafety illustration
+
+## Commercial Example 1: Ginkgo Bioworks
+
+::::: columns
+::: {.column width="60%"}
+**Business Model:**
+
+-   "Organism company" - designs custom microbes
+-   Automated strain engineering platform
+-   Applications in pharmaceuticals, agriculture, food
+-   Partnerships with major corporations
+-   Valuation: \$15+ billion (2021)
+:::
+
+::: {.column width="40%"}
+**Key Technologies:**
+
+-   High-throughput DNA assembly
+-   Automated testing and optimization
+-   Machine learning for design
+-   Standardized biological parts
+:::
+:::::
+
+Source: Ginkgo Bioworks company materials
+
+## Commercial Example 2: Synthetic Spider Silk
+
+::: incremental
+-   Companies: Bolt Threads, Spiber, Modern Meadow
+-   Product: Recombinant spider silk proteins in microorganisms
+-   Properties: Stronger than steel, biodegradable, lightweight
+-   Applications: Textiles, medical devices, protective equipment
+-   Market potential: \$1.3 billion by 2027
+:::
+
+Source: Nature Materials (2019)
+
+## Commercial Example 3: Biofuels and Chemicals
+
+::::: columns
+::: {.column width="50%"}
+**Zymergen (acquired by Ginkgo):**
+
+-   Microbial strain optimization
+-   Machine learning-guided engineering
+-   Focus on specialty chemicals
+:::
+
+::: {.column width="50%"}
+**Amyris:**
+
+-   Synthetic artemisinin production
+-   Renewable chemicals from sugar
+-   Cosmetics and fragrance ingredients
+:::
+:::::
+
+AI-generated biofuel production flowchart
+
+## Commercial Example 4: Synthetic Biology in Medicine
+
+::: incremental
+-   CAR-T cell therapy: Engineered immune cells for cancer treatment
+-   Biosynthetic insulin: Recombinant human insulin production
+-   Synthetic antibiotics: Novel antimicrobial compounds
+-   Personalized medicine: Tailored therapeutic approaches
+-   Market size: \$39 billion by 2027
+:::
+
+Source: Nature Biotechnology (2020)
+
+## Commercial Example 5: Food and Agriculture
+
+::::: columns
+::: {.column width="60%"}
+**Applications:**
+
+-   Impossible Foods: Plant-based meat with synthetic heme
+-   Perfect Day: Animal-free dairy proteins
+-   Motif FoodWorks: Designer food ingredients
+-   Crop enhancement: Improved yield and nutrition
+:::
+
+::: {.column width="40%"}
+**Benefits:**
+
+-   Reduced environmental impact
+-   Enhanced nutritional content
+-   Novel flavors and textures
+-   Sustainable production
+:::
+:::::
+
+AI-generated sustainable food production
+::::::::::::::::::::::::::::::::::::::
