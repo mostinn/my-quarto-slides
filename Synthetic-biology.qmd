@@ -6,9 +6,11 @@ institute: "Applied Biotechnology and Enterprise Program"
 date: "`r Sys.Date()`"
 format:
   revealjs:
+    output-file: index.html
+    embed-resources: true
+    chalkboard: false
     theme: sky-most
     slide-number: true
-    chalkboard: true
     preview-links: auto
     code-fold: true
     transition: slide
