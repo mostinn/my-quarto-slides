@@ -1,5 +1,5 @@
 ---
-title: "Basic Principles of Synthetic Biology"
+title: "Draft: Basic Principles of Synthetic Biology"
 subtitle: "Engineering Biology for Innovation"
 author: "Magnus Stefansson, MBA, Ph.D."
 institute: "Applied Biotechnology and Enterprise Program"
