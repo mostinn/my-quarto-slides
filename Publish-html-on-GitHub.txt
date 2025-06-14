@@ -1,0 +1,47 @@
+## Start a git session in the directory (and get the right directory for the git tab):
+
+#_ Just push your changes:
+git init
+
+Step 2: Create a GitHub Repository
+1. Go to GitHub.com and sign in
+2. Click the "+" icon in the top right corner
+3. Select "New repository"
+4. Name your repository (e.g., "my-quarto-slides")
+5. Make it public if you want GitHub Pages to work with a free account
+6. Don't initialize with README since you already have files
+7. Click "Create repository"
+
+Step 3: Configure Your Quarto Document for GitHub Pages
+Update your Quarto slides YAML header:
+
+---
+title: "Your Slide Title"
+format: 
+  revealjs:
+    output-file: index.html
+    embed-resources: true
+---
+
+The output-file: index.html ensures GitHub Pages will serve your slides correctly.
+Step 4: Render Your Slides
+In RStudio, render your slides:
+quarto render
+
+git add .
+git commit -m "Add Quarto slides"
+git branch -M main
+git remote add origin https://github.com/mostinn/my-quarto-slides.git
+git push -u origin main
+
+Step 7: Enable GitHub Pages
+1. Go to your repository on GitHub
+2. Click on "Settings" tab
+3. Scroll down to "Pages" in the left sidebar
+4. Under "Source", select "Deploy from a branch"
+5. Choose "main" branch and "/ (root)" folder
+6. Click "Save"
+
+Step 8: Access Your Published Slides
+Your slides will be available at:
+https://mostinn.github.io/my-quarto-slides/

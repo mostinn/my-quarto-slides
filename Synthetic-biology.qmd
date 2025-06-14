@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 format:
   revealjs:
     output-file: index.html
-    embed-resources: true
+    embed-resources: false
     chalkboard: false
     theme: sky-most
     slide-number: true
@@ -101,17 +101,23 @@ Source: Nature Reviews Molecular Cell Biology (2016)
 :::
 
 ::: {.column width="30%"}
-![](Images/Simple-DNA.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Simple-DNA.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 
-![](Images/Phage.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Phage.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 
-![](Images/Blocks.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Blocks.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 
-![](Images/Simple-Mycoplasma.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Simple-Mycoplasma.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 
-![](Images/Simple-Chromosome.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Simple-Chromosome.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 
-![](Images/Gene-circuits.png){fig-align="center" height="55px" style="margin: 0 0;"}
+![](Images/Gene-circuits.png){fig-align="center" height="55px"
+style="margin: 0 0;"}
 :::
 :::::
 
